@@ -1,7 +1,7 @@
 pipeline {
    agent any  
-   def mvnHome = tool 'M3'
    stage('Build') {
+      def mvnHome = tool 'M3'
       // Run the maven build
       if (isUnix()) {
          sh "pwd"
